@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laksh Empires — Crafting Legacies. Building Futures.</title>
+<meta name="description" content="Laksh Empires — Sale, Purchase, Construction & Interior across YEIDA, GNIDA & Noida. Founded by Lakshay Dawar." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950:'#060919', 900:'#0A0E27', 800:'#10153A', 700:'#171D4D' },
+          gold: { 300:'#FFD98A', 400:'#FFC152', 500:'#F5A623', 600:'#D4820A', 700:'#A8650A' },
+          ivory: '#F3EFE4'
+        },
+        fontFamily: { display: ['"Baloo 2"', 'sans-serif'], body: ['Inter', 'sans-serif'] },
+        boxShadow: { gold: '0 0 0 1px rgba(245,166,35,0.35), 0 8px 30px -8px rgba(245,166,35,0.35)' }
+      }
+    }
+  }
+</script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-body text-ivory antialiased bg-navy-950">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-transparent bg-navy-950/80 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3 shrink-0">
+      <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" class="h-10 w-auto object-contain">
+      <span class="font-display font-extrabold tracking-wide text-lg md:text-xl text-gold-300 uppercase">
+        LAKSH EMPIRES
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 font-medium text-sm text-ivory/90 uppercase tracking-wider">
+      <a href="index.html" data-nav-link class="nav-link">Home</a>
+      <a href="services.html" data-nav-link class="nav-link">Services</a>
+      <a href="properties.html" data-nav-link class="nav-link">Properties</a>
+      <a href="about.html" data-nav-link class="nav-link">About</a>
+      <a href="contact.html" data-nav-link class="nav-link">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <!-- WhatsApp Header Button -->
+<a id="whatsapp-trigger" href="https://wa.me/919696969916?text=Hi%20Laksh%20Empires,%20I%20am%20interested%20in%20your%20properties" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-full transition-all">
+  <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+</a>
+
+      <a href="tel:+919696969916" class="btn-gold hidden sm:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-full transition-all">
+        <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
+      </a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" class="lg:hidden text-ivory p-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="lg:hidden hidden bg-navy-900/98 border-t border-gold-500/20 px-6 py-6 flex flex-col gap-5 font-medium text-ivory/85 text-base uppercase tracking-wider">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="tel:+919696969916" class="btn-gold inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-950 font-bold px-4 py-3 rounded-full mt-1 uppercase">
+      <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO WITH VIDEO BACKGROUND ============ -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-navy-950/90 via-navy-950/75 to-navy-950 z-10"></div>
+  <div class="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] bg-gold-500/10 rounded-full blur-3xl z-10"></div>
+
+  <div class="relative max-w-5xl mx-auto px-6 pt-36 pb-28 text-center z-20">
+    <div class="mb-6 flex justify-center float-slow">
+      <div class="relative crest-glow crown-glint">
+        <img src="ku-removebg-preview.png" alt="Laksh Empires Main Logo" class="w-36 h-auto sm:w-44 md:w-52 drop-shadow-[0_0_25px_rgba(245,166,35,0.4)]">
+      </div>
+    </div>
+
+    <h1 class="reveal font-display font-extrabold text-4xl sm:text-5xl md:text-7xl leading-[1.05] tracking-tight text-gold-500 mb-6 uppercase">
+      CRAFTING LEGACIES,<br class="hidden sm:block"> BUILDING FUTURES<br class="hidden sm:block"> IN NOIDA
+    </h1>
+
+    <p class="reveal uppercase tracking-[0.35em] text-xs md:text-sm text-gold-400 font-semibold mb-6">Yeida &nbsp;·&nbsp; Gnida &nbsp;·&nbsp; Noida</p> 
+
+    <p class="reveal mt-8 text-ivory/80 text-base md:text-lg max-w-2xl mx-auto">
+      A family name behind land sale, purchase, construction and bespoke interiors across the National Capital Region — built on trust, delivered with precision.
+    </p>
+
+    <div class="reveal mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="properties.html" class="btn-gold w-full sm:w-auto bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition-all">
+        View Our Properties
+      </a>
+      <a href="tel:+919696969916" class="btn-gold w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-gold-500/50 hover:border-gold-400 text-gold-400 font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition-all bg-navy-950/40 backdrop-blur-sm">
+        <i data-lucide="phone-call" class="w-4 h-4"></i> +91 9696969916
+      </a>
+    </div>
+  </div>
+
+  <!-- Skyline Graphic Divider -->
+  <svg viewBox="0 0 1440 120" class="absolute bottom-0 left-0 w-full h-24 md:h-32 z-20" preserveAspectRatio="none" aria-hidden="true">
+    <rect class="skyline" x="0" y="60" width="70" height="60"/><rect class="skyline" x="80" y="30" width="50" height="90"/>
+    <rect class="skyline" x="140" y="70" width="60" height="50"/><rect class="skyline" x="210" y="10" width="46" height="110"/>
+    <rect class="skyline" x="270" y="50" width="70" height="70"/><rect class="skyline" x="360" y="40" width="50" height="80"/>
+    <rect class="skyline" x="420" y="65" width="80" height="55"/><rect class="skyline" x="520" y="20" width="46" height="100"/>
+    <rect class="skyline" x="580" y="55" width="60" height="65"/><rect class="skyline" x="660" y="35" width="70" height="85"/>
+    <rect class="skyline" x="750" y="65" width="50" height="55"/><rect class="skyline" x="820" y="15" width="46" height="105"/>
+    <rect class="skyline" x="880" y="55" width="70" height="65"/><rect class="skyline" x="970" y="30" width="50" height="90"/>
+    <rect class="skyline" x="1030" y="70" width="60" height="50"/><rect class="skyline" x="1100" y="10" width="46" height="110"/>
+    <rect class="skyline" x="1160" y="50" width="70" height="70"/><rect class="skyline" x="1250" y="40" width="50" height="80"/>
+    <rect class="skyline" x="1310" y="65" width="80" height="55"/><rect class="skyline" x="1400" y="35" width="40" height="85"/>
+  </svg>
+</section>
+
+<!-- ============ SERVICES PREVIEW (4 PILLARS WITH LOGOS) ============ -->
+<section class="relative bg-navy-900 py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal text-center max-w-2xl mx-auto mb-16">
+      <p class="uppercase tracking-[0.3em] text-xs text-gold-400 font-semibold mb-4">What We Do</p>
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl text-gold-300 uppercase">Four Pillars, One Crown</h2>
+      <p class="mt-5 text-ivory/70 uppercase text-sm tracking-wide">Sale, purchase, construction and interior — carried out across YEIDA, GNIDA and Noida.</p>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- SALE CARD -->
+      <div class="relative group bg-navy-800/70 border border-gold-500/15 rounded-2xl p-7 hover:border-gold-500/50 transition-colors duration-300 flex flex-col justify-between">
+        <img src="ku-removebg-preview.png" alt="Laksh Empires" class="absolute top-4 right-4 h-6 w-auto opacity-30 group-hover:opacity-70 transition-opacity">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition-colors">
+            <i data-lucide="key-round" class="w-7 h-7 text-gold-500"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gold-400 uppercase mb-3">Sale</h3>
+          <p class="text-ivory/65 text-sm leading-relaxed">Plots, built-up homes and commercial units, sold with clear titles and honest pricing.</p>
+        </div>
+      </div>
+
+      <!-- PURCHASE CARD -->
+      <div class="relative group bg-navy-800/70 border border-gold-500/15 rounded-2xl p-7 hover:border-gold-500/50 transition-colors duration-300 flex flex-col justify-between">
+        <img src="ku-removebg-preview.png" alt="Laksh Empires" class="absolute top-4 right-4 h-6 w-auto opacity-30 group-hover:opacity-70 transition-opacity">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition-colors">
+            <i data-lucide="handshake" class="w-7 h-7 text-gold-500"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gold-400 uppercase mb-3">Purchase</h3>
+          <p class="text-ivory/65 text-sm leading-relaxed">End-to-end support for buyers — from shortlisting to due diligence and closing.</p>
+        </div>
+      </div>
+
+      <!-- CONSTRUCTION CARD -->
+      <div class="relative group bg-navy-800/70 border border-gold-500/15 rounded-2xl p-7 hover:border-gold-500/50 transition-colors duration-300 flex flex-col justify-between">
+        <img src="ku-removebg-preview.png" alt="Laksh Empires" class="absolute top-4 right-4 h-6 w-auto opacity-30 group-hover:opacity-70 transition-opacity">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition-colors">
+            <i data-lucide="hard-hat" class="w-7 h-7 text-gold-500"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gold-400 uppercase mb-3">Construction</h3>
+          <p class="text-ivory/65 text-sm leading-relaxed">Ground-up construction managed with an eye for quality, timelines and durability.</p>
+        </div>
+      </div>
+
+      <!-- INTERIOR CARD -->
+      <div class="relative group bg-navy-800/70 border border-gold-500/15 rounded-2xl p-7 hover:border-gold-500/50 transition-colors duration-300 flex flex-col justify-between">
+        <img src="ku-removebg-preview.png" alt="Laksh Empires" class="absolute top-4 right-4 h-6 w-auto opacity-30 group-hover:opacity-70 transition-opacity">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition-colors">
+            <i data-lucide="palette" class="w-7 h-7 text-gold-500"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gold-400 uppercase mb-3">Interior</h3>
+          <p class="text-ivory/65 text-sm leading-relaxed">Luxury bespoke interiors, smart layouts, modern execution and turnkey finishing.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal text-center mt-12">
+      <a href="services.html" class="text-gold-400 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 uppercase tracking-wider transition-all">Explore all services <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPERTIES PREVIEW ============ -->
+<section class="relative bg-navy-950 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <p class="uppercase tracking-[0.3em] text-xs text-gold-400 font-semibold mb-4">Properties</p>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl text-gold-300 uppercase">Under the Crown</h2>
+      </div>
+      <a href="properties.html" class="text-gold-400 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 uppercase tracking-wider transition-all shrink-0">View all properties <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Residential Plots -->
+      <article class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern residential plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Residential Plots</h3>
+          <p class="text-gold-400 text-sm font-semibold uppercase tracking-wider">SECTOR 16, 17, 18, 20, 22D</p>
+        </div>
+      </article>
+
+      <!-- Premium Apartments -->
+      <article class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Premium apartment building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">PURCHASE</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Premium Apartments</h3>
+          <p class="text-gold-400 text-sm font-semibold uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
+        </div>
+      </article>
+
+      <!-- Villas -->
+      <article class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300 sm:col-span-2 lg:col-span-1">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Custom Villa Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">CONSTRUCTION</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Luxury Villas</h3>
+          <p class="text-gold-400 text-sm font-semibold uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT PREVIEW ============ -->
+<section class="relative bg-navy-900 py-24 md:py-32 overflow-hidden">
+  <div class="pointer-events-none absolute -right-40 top-10 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+  <div class="max-w-5xl mx-auto px-6 text-center reveal">
+    <p class="uppercase tracking-[0.3em] text-xs text-gold-400 font-semibold mb-4">Why Laksh Empires</p>
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl text-gold-300 uppercase mb-6">Led by Lakshay Dawar, Founding Director</h2>
+    <p class="text-ivory/70 leading-relaxed max-w-2xl mx-auto mb-8 uppercase text-sm tracking-wide">
+      Every sale, purchase and construction project is guided directly by its Founding Director — the standard behind the crown on every card we hand out.
+    </p>
+    <a href="about.html" class="text-gold-400 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 uppercase tracking-wider transition-all">Read our story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="relative bg-navy-950 py-20 border-y border-gold-500/10">
+  <div class="reveal max-w-4xl mx-auto px-6 text-center">
+    <h2 class="font-display font-extrabold text-2xl md:text-4xl text-gold-300 uppercase mb-6">Ready to bring your project under the crown?</h2>
+    <a href="contact.html" class="btn-gold inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider">
+      Request a Callback
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative bg-navy-950 border-t border-gold-500/10 pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" class="h-8 w-auto object-contain">
+          <span class="font-display font-extrabold text-lg text-gold-300 uppercase">LAKSH EMPIRES</span>
+        </a>
+        <p class="text-ivory/50 text-xs uppercase tracking-wider max-w-xs">Crafting Legacies. Building Futures.</p>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.3em] text-xs text-gold-400 font-semibold mb-4">Sitemap</p>
+        <ul class="space-y-2 text-xs uppercase tracking-wider text-ivory/60">
+          <li><a href="index.html" class="hover:text-gold-400 transition-colors">Home</a></li>
+          <li><a href="services.html" class="hover:text-gold-400 transition-colors">Services</a></li>
+          <li><a href="properties.html" class="hover:text-gold-400 transition-colors">Properties</a></li>
+          <li><a href="about.html" class="hover:text-gold-400 transition-colors">About</a></li>
+          <li><a href="contact.html" class="hover:text-gold-400 transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.3em] text-xs text-gold-400 font-semibold mb-4">Follow</p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="divider mb-6 border-b border-gold-500/10"></div>
+    <p class="text-center text-ivory/35 text-xs tracking-wider uppercase">&copy; 2026 Laksh Empires. All rights reserved.</p>
+  </div>
+</footer>
+<!-- ============ RETURNING WHATSAPP CLIENT POPUP ============ -->
+<div id="wa-lead-modal" style="display: none;" class="fixed inset-0 z-[1000] bg-navy-950/85 backdrop-blur-md items-center justify-center p-4">
+  <div class="relative bg-navy-900 border border-gold-500/30 rounded-2xl max-w-lg w-full p-7 md:p-8 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+    
+    <!-- Close Button -->
+    <button id="wa-modal-close" type="button" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-navy-950/80 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center text-ivory transition-colors cursor-pointer">
+      <i data-lucide="x" class="w-4 h-4"></i>
+    </button>
+
+    <div class="text-center mb-6">
+      <div class="w-14 h-14 mx-auto rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mb-3">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+      </div>
+      <h3 class="font-display font-bold text-2xl text-gold-300 uppercase">Welcome Back!</h3>
+      <p class="text-ivory/70 text-xs uppercase tracking-wider mt-1">Please provide your details so our team can assign a dedicated advisor for you.</p>
+    </div>
+
+    <!-- Lead Form to Email -->
+    <form id="wa-lead-form" action="https://formsubmit.co/lakshempires@gmail.com" method="POST" class="grid gap-4">
+      <input type="hidden" name="_subject" value="New WhatsApp Returning Client Lead — Laksh Empires">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Full Name</label>
+        <input type="text" name="Client_Name" required placeholder="ENTER YOUR FULL NAME"
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Mobile / WhatsApp Number</label>
+        <input type="tel" name="Phone_Number" required pattern="[0-9+ ]{7,15}" placeholder="10-DIGIT PHONE NUMBER"
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Email ID</label>
+        <input type="email" name="Email_ID" required placeholder="YOUR EMAIL ADDRESS"
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Requirement</label>
+        <select name="Requirement" class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory outline-none transition-colors">
+          <option value="Residential Plot">RESIDENTIAL PLOT</option>
+          <option value="Purchase Apartment">PREMIUM APARTMENT</option>
+          <option value="Construction">CONSTRUCTION</option>
+          <option value="Interior Design">INTERIOR DESIGN</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-gold w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold py-3.5 rounded-full text-xs uppercase tracking-wider transition-all mt-2">
+        Submit Details
+      </button>
+    </form>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

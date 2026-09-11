@@ -1,0 +1,102 @@
+/* Poori website ke har text ko capital (UPPERCASE) karne ke liye */
+* {
+  text-transform: uppercase !important;
+}
+/* Inputs aur Textareas ko normal rakhne ke liye */
+input, textarea {
+  text-transform: none !important;
+}
+html { scroll-behavior: smooth; }
+body { background-color: #0A0E27; }
+
+/* ---------- Crest / crown signature marks ---------- */
+.crest-glow { filter: drop-shadow(0 0 18px rgba(245,166,35,0.35)); }
+
+@keyframes glint {
+  0%, 100% { opacity: 0.55; transform: translateX(-60%) skewX(-20deg); }
+  50% { opacity: 0.9; transform: translateX(160%) skewX(-20deg); }
+}
+.crown-glint::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, transparent 40%, rgba(255,255,255,0.55) 50%, transparent 60%);
+  animation: glint 4.5s ease-in-out infinite;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+/* ---------- Scroll reveal ---------- */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.reveal-stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-stagger.in-view > * { opacity: 1; transform: translateY(0); }
+.reveal-stagger.in-view > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.in-view > *:nth-child(2) { transition-delay: 120ms; }
+.reveal-stagger.in-view > *:nth-child(3) { transition-delay: 240ms; }
+.reveal-stagger.in-view > *:nth-child(4) { transition-delay: 360ms; }
+.reveal-stagger.in-view > *:nth-child(5) { transition-delay: 480ms; }
+.reveal-stagger.in-view > *:nth-child(6) { transition-delay: 600ms; }
+
+/* ---------- Section divider ---------- */
+.divider { display:flex; align-items:center; gap:1rem; }
+.divider .line { height:1px; flex:1; background:linear-gradient(90deg, transparent, rgba(245,166,35,0.5), transparent); }
+
+/* ---------- Nav ---------- */
+.nav-link { position: relative; }
+.nav-link::after {
+  content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px;
+  background:#F5A623; transition: width 0.25s ease;
+}
+.nav-link:hover::after { width:100%; }
+.nav-link.active { color:#FFC152; }
+.nav-link.active::after { width:100%; }
+
+/* ---------- Buttons ---------- */
+.btn-gold { transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; }
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -10px rgba(245,166,35,0.55); }
+.btn-gold:active { transform: translateY(0); }
+
+/* ---------- Crest badge (signature tag element) ---------- */
+.crest-badge {
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+}
+
+/* ---------- Filter chips (Properties page) ---------- */
+.filter-chip { transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.filter-chip.active { background-color: #F5A623; color: #0A0E27; border-color: #F5A623; }
+
+/* ---------- Form success animation ---------- */
+@keyframes pop-in {
+  0% { opacity:0; transform: scale(0.85); }
+  60% { opacity:1; transform: scale(1.03); }
+  100% { opacity:1; transform: scale(1); }
+}
+.pop-in { animation: pop-in 0.5s ease forwards; }
+
+/* ---------- Skyline silhouette ---------- */
+.skyline { fill: #060919; }
+
+/* ---------- Sub-page hero banner ---------- */
+.page-banner { background: radial-gradient(circle at 50% -10%, rgba(245,166,35,0.14), transparent 60%), #0A0E27; }
+
+/* ---------- Modal (Properties quick view) ---------- */
+.modal-backdrop { background: rgba(6,9,25,0.82); backdrop-filter: blur(4px); }
+
+/* Focus visibility for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #F5A623; outline-offset: 2px; border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crown-glint::after, .float-slow { animation: none !important; }
+  .reveal, .reveal-stagger > * { transition: none !important; opacity:1 !important; transform:none !important; }
+}
+
+::selection { background: #F5A623; color: #0A0E27; }
