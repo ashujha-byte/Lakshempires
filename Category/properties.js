@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // --- 1. FILTER SYSTEM ---
+  // --- 1. FILTER FUNCTIONALITY ---
   const chips = document.querySelectorAll('.filter-chip');
-  const articles = document.querySelectorAll('article');
+  const articles = document.querySelectorAll('article[data-category]');
 
   chips.forEach(chip => {
     chip.addEventListener('click', () => {
@@ -15,46 +15,38 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = chip.getAttribute('data-filter') || 'all';
 
       articles.forEach(card => {
-        const badge = card.querySelector('.crest-badge');
-        const category = badge ? badge.textContent.trim().toLowerCase() : '';
-        const match = (filter === 'all' || category === filter.toLowerCase());
+        const category = card.getAttribute('data-category') || '';
+        const match = (filter === 'all' || category.toLowerCase() === filter.toLowerCase());
         card.style.display = match ? 'block' : 'none';
       });
     });
   });
 
-  // --- 2. MODAL POPUP SYSTEM ---
+  // --- 2. POPUP ENQUIRY FORM LOGIC ---
   const modal = document.getElementById('property-modal');
-  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+  const propNameEl = document.getElementById('modal-property-name');
+  const propLocationEl = document.getElementById('modal-property-location');
   const modalBadge = document.getElementById('modal-badge');
-  const modalTitle = document.getElementById('modal-title');
-  const modalLocation = document.getElementById('modal-location');
-  const modalDesc = document.getElementById('modal-desc');
-  const closeBtn = document.getElementById('modal-close');
+  const formPropTitle = document.getElementById('form-prop-title');
+  const formPropLocation = document.getElementById('form-prop-location');
 
-  const openModalWithCard = (card) => {
+  const openEnquiryModal = (card) => {
     if (!modal || !card) return;
 
-    // Card se live content nikalna
-    const titleEl = card.querySelector('h3');
-    const locationEl = card.querySelector('p');
-    const imgEl = card.querySelector('img');
-    const badgeEl = card.querySelector('.crest-badge');
+    const title = card.getAttribute('data-title') || card.querySelector('h3')?.innerText || 'Exclusive Property';
+    const location = card.getAttribute('data-location') || card.querySelector('p')?.innerText || 'Noida / Greater Noida';
+    const category = (card.getAttribute('data-category') || 'SALE').toUpperCase();
 
-    const title = titleEl ? titleEl.innerText : 'Exclusive Property';
-    const location = locationEl ? locationEl.innerText : 'Noida / Greater Noida';
-    const img = imgEl ? imgEl.src : '';
-    const badge = badgeEl ? badgeEl.innerText : 'PROPERTY';
+    // Fill form visual details
+    if (propNameEl) propNameEl.textContent = title;
+    if (propLocationEl) propLocationEl.textContent = location;
+    if (modalBadge) modalBadge.textContent = category;
 
-    if (modalTitle) modalTitle.textContent = title;
-    if (modalLocation) modalLocation.textContent = location;
-    if (modalImg) modalImg.src = img;
-    if (modalBadge) modalBadge.textContent = badge;
-    if (modalDesc) {
-      modalDesc.textContent = `A prime ${badge.toLowerCase()} property situated in ${location}. Verified documents, clean titles, and premium construction under Laksh Empires assurance.`;
-    }
+    // Fill form hidden values for Email report
+    if (formPropTitle) formPropTitle.value = title;
+    if (formPropLocation) formPropLocation.value = location;
 
-    // Direct display flex trigger
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
@@ -63,33 +55,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const closeModal = () => {
+  const closeEnquiryModal = () => {
     if (!modal) return;
     modal.style.display = 'none';
     document.body.style.overflow = '';
   };
 
-  // Click listener on all View Details buttons
+  // Event delegation to capture all "View Details" button clicks
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-view-details]');
     if (btn) {
       e.preventDefault();
       const card = btn.closest('article');
       if (card) {
-        openModalWithCard(card);
+        openEnquiryModal(card);
       }
     }
   });
 
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (modalClose) {
+    modalClose.addEventListener('click', closeEnquiryModal);
+  }
 
   if (modal) {
     modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
+      if (e.target === modal) closeEnquiryModal();
     });
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Escape') closeEnquiryModal();
   });
 });

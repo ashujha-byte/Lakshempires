@@ -7,7 +7,7 @@
 <meta name="description" content="Browse sale, purchase and construction properties from Laksh Empires across YEIDA, GNIDA and Noida." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -27,6 +27,7 @@
   }
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,23 +35,23 @@
 
 <!-- ============ HEADER ============ -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-gold-500/10 bg-navy-950/90 backdrop-blur-md">
-  <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20">
-    <a href="index.html" class="flex items-center gap-3 shrink-0">
-      <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" class="h-10 w-auto object-contain">
-      <span class="font-display font-extrabold tracking-wide text-lg md:text-xl text-gold-300 uppercase">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" class="h-9 sm:h-10 w-auto object-contain">
+      <span class="font-display font-extrabold tracking-wide text-base sm:text-xl text-gold-500 uppercase">
         LAKSH EMPIRES
       </span>
     </a>
 
     <nav class="hidden lg:flex items-center gap-9 font-medium text-sm text-ivory/90 uppercase tracking-wider">
-      <a href="index.html" data-nav-link class="nav-link">Home</a>
-      <a href="services.html" data-nav-link class="nav-link">Services</a>
-      <a href="properties.html" data-nav-link class="nav-link text-gold-400">Properties</a>
-      <a href="about.html" data-nav-link class="nav-link">About</a>
-      <a href="contact.html" data-nav-link class="nav-link">Contact Us</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="properties.html" class="nav-link text-gold-400">Properties</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
     </nav>
 
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2 sm:gap-3">
       <a id="whatsapp-trigger" href="https://wa.me/919696969916?text=Hi%20Laksh%20Empires,%20I%20am%20interested%20in%20your%20properties" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-wider px-3.5 py-2 rounded-full transition-all shadow-md">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>WhatsApp</span>
@@ -58,31 +59,33 @@
       <a href="tel:+919696969916" class="btn-gold hidden sm:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-full transition-all">
         <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
       </a>
-      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" class="lg:hidden text-ivory p-2">
+      <button id="menu-btn" type="button" aria-label="Open menu" class="lg:hidden text-gold-400 p-2 cursor-pointer">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
   </div>
 
-  <div id="mobile-menu" class="lg:hidden hidden bg-navy-900/98 border-t border-gold-500/20 px-6 py-6 flex flex-col gap-5 font-medium text-ivory/85 text-base uppercase tracking-wider">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="properties.html">Properties</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="tel:+919696969916" class="btn-gold inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-950 font-bold px-4 py-3 rounded-full mt-1 uppercase">
-      <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
-    </a>
+  <div id="mobile-menu" class="hidden lg:hidden bg-navy-950/98 border-t border-gold-500/20 px-6 py-6 flex flex-col gap-4 font-semibold text-ivory text-sm uppercase tracking-wider shadow-2xl">
+    <a href="index.html" class="hover:text-gold-300 py-1">Home</a>
+    <a href="services.html" class="hover:text-gold-300 py-1">Services</a>
+    <a href="properties.html" class="text-gold-400 py-1">Properties</a>
+    <a href="about.html" class="hover:text-gold-300 py-1">About</a>
+    <a href="contact.html" class="hover:text-gold-300 py-1">Contact Us</a>
+    <div class="pt-2 border-t border-gold-500/15">
+      <a href="tel:+919696969916" class="btn-gold inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-950 font-bold px-4 py-3 rounded-full text-xs uppercase tracking-wider w-full">
+        <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
+      </a>
+    </div>
   </div>
 </header>
 
 <!-- ============ PAGE BANNER ============ -->
 <section class="page-banner pt-40 pb-16 bg-navy-950 relative overflow-hidden">
   <div class="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[35rem] h-[35rem] bg-gold-500/10 rounded-full blur-3xl"></div>
-  <div class="reveal max-w-4xl mx-auto px-6 text-center relative z-10">
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
     <p class="uppercase tracking-[0.3em] text-xs text-gold-500 font-semibold mb-4">Properties</p>
     <h1 class="font-display font-extrabold text-4xl md:text-6xl text-gold-500 uppercase">Under the Crown</h1>
-    <p class="mt-5 text-ivory/70 max-w-2xl mx-auto uppercase text-sm tracking-wide">A sample of the kind of plots, homes and commercial projects Laksh Empires places under its name. Filter below or contact us for current live listings.</p>
+    <p class="mt-5 text-cream/70 max-w-2xl mx-auto uppercase text-sm tracking-wide">A sample of the kind of plots, homes and commercial projects Laksh Empires places under its name. Filter below or enquire directly.</p>
   </div>
 </section>
 
@@ -90,152 +93,188 @@
 <section class="relative bg-navy-950 pb-28">
   <div class="max-w-6xl mx-auto px-6">
 
-    <div class="reveal flex flex-wrap justify-center gap-3 mb-14">
-      <button class="filter-chip active border border-gold-500/40 text-gold-300 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900 transition-all hover:border-gold-400" data-filter="all">All</button>
-      <button class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 transition-all hover:border-gold-400 hover:text-gold-300" data-filter="sale">Sale</button>
-      <button class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 transition-all hover:border-gold-400 hover:text-gold-300" data-filter="purchase">Purchase</button>
-      <button class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 transition-all hover:border-gold-400 hover:text-gold-300" data-filter="construction">Construction</button>
+    <div class="flex flex-wrap justify-center gap-3 mb-14">
+      <button type="button" class="filter-chip active border border-gold-500/40 text-gold-300 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900 cursor-pointer" data-filter="all">All</button>
+      <button type="button" class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 cursor-pointer hover:text-gold-300" data-filter="sale">Sale</button>
+      <button type="button" class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 cursor-pointer hover:text-gold-300" data-filter="purchase">Purchase</button>
+      <button type="button" class="filter-chip border border-gold-500/30 text-ivory/80 text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full bg-navy-900/60 cursor-pointer hover:text-gold-300" data-filter="construction">Construction</button>
     </div>
 
-    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- 1. Commercial Studio (NEW) -->
-      <article data-category="sale" data-title="Commercial Studio Apartments" data-location="NOIDA · G.NOIDA · YEIDA" data-image="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" data-desc="High-yield commercial studio apartments designed for modern professionals and smart investors. Located in high-growth commercial hubs across Noida and YEIDA with verified lease opportunities."
+      <!-- 1. Commercial Studio -->
+      <article data-category="sale" data-title="Commercial Studio Apartments" data-location="NOIDA · G.NOIDA · YEIDA"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Modern Commercial Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Commercial Studio Apartments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Commercial Studios</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
-      <!-- 2. Commercial Shop (NEW) -->
-      <article data-category="sale" data-title="Prime Commercial Retail Shops" data-location="NOIDA · G.NOIDA · YEIDA" data-image="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" data-desc="Ground and upper retail commercial shops in prime high-footfall business districts. Offering exceptional visibility, maximum ROI, clear titles, and seamless registry paperwork."
+      <!-- 2. Commercial Shop -->
+      <article data-category="sale" data-title="Prime Commercial Retail Shops" data-location="NOIDA · G.NOIDA · YEIDA"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Prime Commercial Retail Shops" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Prime Commercial Retail Shops" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Commercial Shops</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
-      <!-- 3. Residential Plots -->
-      <article data-category="sale" data-title="Residential Plot, Sector 16, 17, 18, 20, 22D" data-location="YEIDA, Greater Noida" data-image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" data-desc="A clear-title residential plot in fast-developing YEIDA sectors 16, 17, 18, 20, 22D, close to the upcoming expressway link — well suited for a family home or long-term hold."
+<!-- Commercial Shop Space Card -->
+      <article data-category="sale" data-title="Commercial Shop Space" data-location="NOIDA · G.NOIDA · YEIDA · DELHI NCR"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern residential plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=800&q=80" alt="Commercial Shop Space" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Commercial Shop Space</h3>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </article>
+      
+      <!-- 3. Residential Plots -->
+      <article data-category="sale" data-title="Residential Plots in YEIDA" data-location="SECTOR 16, 17, 18, 20, 22D"
+        class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern residential plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Residential Plots IN YEIDA</h3>
           <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">SECTOR 16, 17, 18, 20, 22D</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 4. Premium Apartments -->
-      <article data-category="purchase" data-title="Premium Apartments" data-location="NOIDA · G.NOIDA · YEIDA · DELHI NCR" data-image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" data-desc="A gated apartment complex with luxury 2, 3 & 4 BHK units, built for buyers who want move-in-ready homes with verified paperwork."
+      <article data-category="purchase" data-title="Premium Apartments" data-location="NOIDA · G.NOIDA · YEIDA · DELHI NCR"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Premium apartment building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Premium apartment building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">PURCHASE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Premium Apartments</h3>
           <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 5. Custom Villa Build -->
-      <article data-category="construction" data-title="Custom Luxury Villa" data-location="NOIDA · G.NOIDA · YEIDA" data-image="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" data-desc="A ground-up villa project managed end-to-end — structural planning, on-site supervision and quality material sourcing included."
+      <article data-category="construction" data-title="Custom Luxury Villa" data-location="NOIDA · G.NOIDA · YEIDA"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Custom Villa Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Custom Villa Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">CONSTRUCTION</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Luxury Villa Build</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 6. Commercial Frontage -->
-      <article data-category="sale" data-title="Commercial Frontage" data-location="Noida Sector 62" data-image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" data-desc="Ground-floor commercial frontage on a high-footfall stretch, ideal for retail or office use with immediate possession."
+      <article data-category="sale" data-title="Commercial Frontage" data-location="NOIDA SECTOR 62"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Commercial building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Commercial building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Commercial Frontage</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 7. Gated Township Units -->
-      <article data-category="purchase" data-title="Gated Township Units" data-location="YEIDA, Sector 18" data-image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80" data-desc="Units inside a secure, amenity-rich township — a straightforward buy for families wanting a ready community from day one."
+      <article data-category="purchase" data-title="Gated Township Units" data-location="YEIDA, SECTOR 18"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Gated residential township" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Gated residential township" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">PURCHASE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Gated Township Units</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA&middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 8. Independent Floors -->
-      <article data-category="construction" data-title="Independent Floors" data-location="Greater Noida West" data-image="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80" data-desc="Independent floor construction with flexible layouts, built to the owner's specification from foundation to final finish."
+      <article data-category="construction" data-title="Independent Floors" data-location="GREATER NOIDA WEST"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80" alt="Architectural modern structure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80" alt="Architectural modern structure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">CONSTRUCTION</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Independent Floors</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 9. Corner Residential Plot -->
-      <article data-category="sale" data-title="Corner Residential Plot" data-location="Noida Sector 150" data-image="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80" data-desc="A corner plot with two-side road access, close to Noida's green belt — a strong option for a custom-built family home."
+      <article data-category="sale" data-title="Corner Residential Plot" data-location="NOIDA SECTOR 150"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80" alt="Open residential land plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80" alt="Open residential land plot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">SALE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Corner Residential Plot</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
       <!-- 10. Ready-to-Move Villa -->
-      <article data-category="purchase" data-title="Ready-to-Move Villa" data-location="Alpha-2, Greater Noida" data-image="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" data-desc="A finished villa with interiors already in place — a clean purchase for buyers who want to skip the wait for construction."
+      <article data-category="purchase" data-title="Ready-to-Move Villa" data-location="ALPHA-2, GREATER NOIDA"
         class="group rounded-2xl overflow-hidden border border-gold-500/15 bg-navy-800/50 hover:border-gold-500/50 transition-colors duration-300">
         <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Interior of a ready-to-move villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Interior of a ready-to-move villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <span class="crest-badge absolute top-4 left-4 bg-gold-500 text-navy-950 text-xs font-bold px-4 py-2 uppercase tracking-wider">PURCHASE</span>
         </div>
         <div class="p-6">
           <h3 class="font-display font-bold text-lg text-white mb-1 uppercase">Ready-to-Move Villa</h3>
-          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA</p>
-          <button data-view-details class="text-gold-500 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+          <p class="text-gold-500 text-sm font-semibold mb-4 uppercase tracking-wider">NOIDA &middot; G.NOIDA &middot; YEIDA &middot; DELHI NCR</p>
+          <button type="button" data-view-details class="text-gold-500 hover:text-gold-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+            View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </div>
       </article>
 
@@ -243,22 +282,68 @@
   </div>
 </section>
 
-<!-- ============ QUICK-VIEW MODAL ============ -->
-<div id="property-modal" style="display: none;" class="fixed inset-0 z-[999] bg-navy-950/85 backdrop-blur-md items-center justify-center p-4">
-  <div class="relative bg-navy-900 border border-gold-500/30 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_50px_rgba(0,0,0,0.8)]">
-    <button id="modal-close" type="button" aria-label="Close" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-navy-950/80 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center text-ivory transition-colors cursor-pointer">
+<!-- ============ PROPERTY ENQUIRY FORM MODAL ============ -->
+<div id="property-modal" style="display: none;" class="fixed inset-0 z-[1000] bg-navy-950/85 backdrop-blur-md items-center justify-center p-4 overflow-y-auto">
+  <div class="relative bg-navy-900 border border-gold-500/30 rounded-2xl max-w-xl w-full my-8 p-6 sm:p-8 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+    
+    <!-- Close Button -->
+    <button id="modal-close" type="button" aria-label="Close" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-navy-950/80 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center text-ivory transition-colors cursor-pointer">
       <i data-lucide="x" class="w-5 h-5"></i>
     </button>
-    <img id="modal-img" src="" alt="Property" class="w-full h-64 sm:h-72 object-cover rounded-t-2xl">
-    <div class="p-6 sm:p-8">
-      <span id="modal-badge" class="inline-block bg-gold-500 text-navy-950 text-xs font-bold px-4 py-1.5 rounded uppercase tracking-wider mb-3"></span>
-      <h3 id="modal-title" class="font-display font-bold text-2xl text-gold-300 uppercase mb-1"></h3>
-      <p id="modal-location" class="text-gold-400/90 text-sm font-semibold mb-4 uppercase tracking-wider"></p>
-      <p id="modal-desc" class="text-ivory/70 text-sm leading-relaxed mb-6"></p>
-      <a href="contact.html" class="btn-gold inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider transition-all">
-        Enquire About This Property <i data-lucide="arrow-right" class="w-4 h-4"></i>
-      </a>
+
+    <div class="mb-6 border-b border-gold-500/15 pb-4">
+      <span id="modal-badge" class="inline-block bg-gold-500 text-navy-950 text-[10px] font-extrabold px-3 py-1 rounded uppercase tracking-wider mb-2">SALE</span>
+      <h3 id="modal-property-name" class="font-display font-bold text-xl sm:text-2xl text-gold-300 uppercase">Property Enquiry</h3>
+      <p id="modal-property-location" class="text-gold-400 text-xs font-semibold uppercase tracking-wider mt-0.5">NOIDA · G.NOIDA · YEIDA</p>
     </div>
+
+    <form id="property-enquiry-form" action="https://formsubmit.co/lakshempires@gmail.com" method="POST" class="grid gap-4">
+      <input type="hidden" name="_subject" value="New Property Enquiry — Laksh Empires Website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="hidden" id="form-prop-title" name="Interested_Property" value="">
+      <input type="hidden" id="form-prop-location" name="Property_Location" value="">
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Your Full Name</label>
+        <input type="text" name="Client_Name" required placeholder="ENTER YOUR FULL NAME"
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Mobile / WhatsApp Number</label>
+          <input type="tel" name="Phone_Number" required pattern="[0-9+ ]{7,15}" placeholder="10-DIGIT NUMBER"
+            class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Estimated Budget</label>
+          <select name="Budget_Range" class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory outline-none transition-colors">
+            <option value="Under 50 Lakhs">UNDER ₹50 LAKHS</option>
+            <option value="50 Lakhs - 1 Crore">₹50 LAKHS - ₹1 CRORE</option>
+            <option value="1 Crore - 2.5 Crore">₹1 CRORE - ₹2.5 CRORE</option>
+            <option value="Above 2.5 Crore">ABOVE ₹2.5 CRORE</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Your Email Address</label>
+        <input type="email" name="Email_ID" required placeholder="ENTER YOUR EMAIL ADDRESS"
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors">
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-ivory/60 mb-1">Specific Requirements / Message</label>
+        <textarea name="Message" rows="3" placeholder="TELL US ABOUT YOUR PREFERRED PLOT/UNIT SIZE, TIMELINE OR SPECIFIC QUERIES..."
+          class="w-full bg-navy-950 border border-gold-500/20 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-ivory placeholder:text-ivory/30 outline-none transition-colors resize-none"></textarea>
+      </div>
+
+      <button type="submit" class="btn-gold w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold py-3.5 rounded-full text-xs uppercase tracking-wider transition-all mt-2 cursor-pointer shadow-lg">
+        Submit Enquiry For This Property
+      </button>
+    </form>
   </div>
 </div>
 
@@ -271,7 +356,7 @@
           <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" class="h-8 w-auto object-contain">
           <span class="font-display font-extrabold text-lg text-gold-500 uppercase">LAKSH EMPIRES</span>
         </a>
-        <p class="text-cream/50 text-xs uppercase tracking-wider max-w-xs">Crafting Legacies. Building Futures.</p>
+        <p class="text-cream/50 text-xs uppercase tracking-wider max-w-xs">Crafting Legacies, Building Futures.</p>
       </div>
       <div>
         <p class="uppercase tracking-[0.3em] text-xs text-gold-500 font-semibold mb-4">Sitemap</p>
@@ -286,27 +371,124 @@
       <div>
         <p class="uppercase tracking-[0.3em] text-xs text-gold-500 font-semibold mb-4">Follow</p>
         <div class="flex gap-3">
-          <a href="https://www.facebook.com/share/1CNrjirEzr/?mibextid=wwXIfr" aria-label="Facebook" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+          <a href="https://www.facebook.com/share/1CNrjirEzr/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
             <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="https://www.instagram.com/lakshempires?stkn=MWp4ajE5MWp3anBzdQ==" aria-label="Instagram" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+          <a href="https://www.instagram.com/lakshempires?stkn=MWp4ajE5MWp3anBzdQ==" target="_blank" aria-label="Instagram" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
             <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/lakshay-dawar-473556374?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
+          <a href="https://www.linkedin.com/in/lakshay-dawar-473556374?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-gold-500/25 hover:border-gold-500 hover:bg-gold-500/10 flex items-center justify-center transition-colors">
             <svg class="w-4 h-4 fill-gold-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
         </div>
       </div>
     </div>
+    <script src="ai-assistant.js"></script>
     <div class="divider mb-6 border-b border-gold-500/10"></div>
     <p class="text-center text-ivory/35 text-xs tracking-wider uppercase">&copy; 2026 Laksh Empires. All rights reserved.</p>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
-<script src="js/properties.js"></script>
+<!-- ============ DIRECT JAVASCRIPT LOGIC ============ -->
 <script>
-  lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Mobile Menu Toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  }
+
+  // 2. Filter System
+  const chips = document.querySelectorAll('.filter-chip');
+  const articles = document.querySelectorAll('article[data-category]');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('active', 'text-gold-300', 'border-gold-500/40');
+        c.classList.add('text-ivory/80', 'border-gold-500/30');
+      });
+      chip.classList.add('active', 'text-gold-300', 'border-gold-500/40');
+      chip.classList.remove('text-ivory/80');
+
+      const filter = chip.getAttribute('data-filter') || 'all';
+      articles.forEach(card => {
+        const cat = card.getAttribute('data-category') || '';
+        const match = (filter === 'all' || cat.toLowerCase() === filter.toLowerCase());
+        card.style.display = match ? 'block' : 'none';
+      });
+    });
+  });
+
+  // 3. Direct Modal Opening on "View Details" Click
+  const modal = document.getElementById('property-modal');
+  const modalClose = document.getElementById('modal-close');
+  const propNameEl = document.getElementById('modal-property-name');
+  const propLocationEl = document.getElementById('modal-property-location');
+  const modalBadge = document.getElementById('modal-badge');
+  const formPropTitle = document.getElementById('form-prop-title');
+  const formPropLocation = document.getElementById('form-prop-location');
+
+  const openEnquiry = (card) => {
+    if (!modal || !card) return;
+    const title = card.getAttribute('data-title') || card.querySelector('h3')?.innerText || 'Exclusive Property';
+    const location = card.getAttribute('data-location') || card.querySelector('p')?.innerText || 'Noida / Greater Noida';
+    const category = (card.getAttribute('data-category') || 'SALE').toUpperCase();
+
+    if (propNameEl) propNameEl.textContent = title;
+    if (propLocationEl) propLocationEl.textContent = location;
+    if (modalBadge) modalBadge.textContent = category;
+    if (formPropTitle) formPropTitle.value = title;
+    if (formPropLocation) formPropLocation.value = location;
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+  };
+
+  const closeEnquiry = () => {
+    if (!modal) return;
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  // Event delegation to catch every View Details click reliably
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-view-details]');
+    if (btn) {
+      e.preventDefault();
+      const card = btn.closest('article');
+      if (card) {
+        openEnquiry(card);
+      }
+    }
+  });
+
+  if (modalClose) modalClose.addEventListener('click', closeEnquiry);
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeEnquiry();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeEnquiry();
+  });
+
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+});
 </script>
 </body>
 </html>
