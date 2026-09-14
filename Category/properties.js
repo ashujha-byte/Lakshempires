@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   chips.forEach(chip => {
     chip.addEventListener('click', () => {
       chips.forEach(c => {
-        c.classList.remove('active', 'text-gold-300', 'border-gold-500/40');
-        c.classList.add('text-ivory/80', 'border-gold-500/30');
+        c.classList.remove('active', 'text-gold-500', 'border-gold-500/40');
+        c.classList.add('text-cream/80', 'border-gold-500/30');
       });
-      chip.classList.add('active', 'text-gold-300', 'border-gold-500/40');
-      chip.classList.remove('text-ivory/80');
+      chip.classList.add('active', 'text-gold-500', 'border-gold-500/40');
+      chip.classList.remove('text-cream/80');
 
       const filter = chip.getAttribute('data-filter') || 'all';
 
