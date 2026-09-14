@@ -76,15 +76,15 @@ Tone & Persona:
         <div class="bg-gradient-to-r from-[#0A0E27] via-[#10153A] to-[#0A0E27] px-5 py-4 border-b border-[#F5A623]/25 flex items-center justify-between shrink-0">
           <div class="flex items-center gap-3">
             <div class="relative w-10 h-10 rounded-full bg-[#F5A623]/15 border border-[#F5A623]/40 flex items-center justify-center text-[#FFD98A] shadow-inner">
-              <i data-lucide="crown" class="w-5 h-5"></i>
+            <img src="ku-removebg-preview.png" alt="Laksh Empires Logo" style="width: 100%; height: 100%; object-fit: contain;" />
               <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border border-[#060919]"></span>
             </div>
             <div>
               <div class="flex items-center gap-1.5">
-                <span class="font-extrabold text-sm tracking-wide text-[#FFD98A] uppercase">Laksh Concierge</span>
+               <span class="font-display font-extrabold text-lg text-gold-500 uppercase">LAKSH EMPIRES</span>
                 <span class="text-[9px] font-bold bg-[#F5A623]/20 text-[#FFD98A] px-1.5 py-0.5 rounded uppercase">24/7 AI</span>
               </div>
-              <p class="text-[11px] text-[#F3EFE4]/60 tracking-wider">Laksh Empires Real Estate Advisor</p>
+              <p class="text-[11px] text-cream/60 tracking-wider">Laksh Empires Real Estate Advisor</p>
             </div>
           </div>
 
@@ -111,7 +111,7 @@ Tone & Persona:
               <i data-lucide="bot" class="w-3.5 h-3.5"></i>
             </div>
             <div class="bg-[#10153A]/90 border border-[#F5A623]/20 rounded-2xl rounded-tl-sm px-4 py-3 text-[#F3EFE4]/90 max-w-[85%] leading-relaxed shadow">
-              Welcome to <strong class="text-[#FFD98A]">Laksh Empires</strong>. I am your 24/7 Luxury Advisory Assistant. How may I assist your investment portfolio across <span class="text-[#FFD98A]">YEIDA, GNIDA, or Noida</span> today?
+              Welcome to <strong class="text-[#FFD98A]">Laksh Empires</strong>. I am your 24/7 Luxury Advisory Assistant. How may I assist your investment portfolio across <span class="text-[#FFD98A]">YEIDA, GNIDA, NOIDA, or DELHI NCR</span> today?
             </div>
           </div>
         </div>
